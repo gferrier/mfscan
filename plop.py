@@ -20,10 +20,16 @@ cur.execute("""select a.id,a.aliname,c.latestimg from alistores a inner join ali
 # TBD ajouter la generation auto des url selon aliurlgen
 
 for storeid,storename,oldlatestimg in cur.fetchall():
+	url = 'https://fr.aliexpress.com/store/new-arrivals/3904022.html?origin=n&SortType=new_desc&page=2'
+	#https://fr.aliexpress.com/store/new-arrivals/1952643.html?origin=n&SortType=new_desc'
+	#https://worldminifigures.fr.aliexpress.com/store/new-arrivals/1041264.html?origin=n&SortType=new_desc'
+	#https://fr.aliexpress.com/store/new-arrivals/3904022.html?origin=n&SortType=new_desc'
+	#url = 'https://fr.aliexpress.com/store/group/Star-wars/3904022_513320934/6.html?spm=a2g0w.12010612.8148361.6.6cde16430daqOV&origin=n&SortType=new_desc&g=y'
 	#url = 'https://fr.aliexpress.com/store/all-wholesale-products/'+str(storeid)+'.html?SortType=new_desc'#&page=2'
 	#url = 'https://fr.aliexpress.com/store/new-arrivals/'+str(storeid)+'.html?SortType=new_desc'
-	
-	url = 'https://worldminifigures.fr.aliexpress.com/store/new-arrivals/1041264.html?SortType=new_desc&page=2'
+	#url = 'https://fr.aliexpress.com/store/new-arrivals/3904022.html?origin=n&SortType=new_desc'
+	#url = 'https://fr.aliexpress.com/store/new-arrivals/2006008.html?origin=n&SortType=new_desc'
+	#url = 'https://worldminifigures.fr.aliexpress.com/store/new-arrivals/1041264.html?SortType=new_desc&page=2'
 	#url = 'https://fr.aliexpress.com/store/new-arrivals/3628010.html?origin=n&SortType=new_desc'
 	# NB SYNTAX	
 	#cur.execute(sql, (value1,value2))
